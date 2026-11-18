@@ -3533,11 +3533,6 @@ int oplus_ofp_power_mode_handle(void *dsi_display, int power_mode)
 				OFP_ERR("[%s] failed to handle aod off, rc=%d\n", display->name, rc);
 			}
 		}
-		if (p_oplus_ofp_params->fp_press) {
-			p_oplus_ofp_params->fp_press = false;
-			OFP_INFO("oplus_ofp_fp_press:%d\n", p_oplus_ofp_params->fp_press);
-			OPLUS_OFP_TRACE_INT("oplus_ofp_fp_press", p_oplus_ofp_params->fp_press);
-		}
 		break;
 
 	case SDE_MODE_DPMS_OFF:
